@@ -12,7 +12,10 @@ Using Docker 1.12 in Swarm mode:
 
 `docker service create --name phpdemo --publish 80:80 --replicas 10 toughiq/phptest:5`
 
-Now you have 10 instances running on Port 80. If you access the server and hit Reload, you should
+Now you have 10 instances running on Port 80. 
+Check: `docker service ps phpemo`
+
+If you access the server and hit Reload, you should
 see different container IDs.
 
 Now lets upgrade:
